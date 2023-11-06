@@ -1,7 +1,8 @@
 import state from "./state.js"
 import * as el from './elements.js'
 import { stop } from "./actions.js"
-import { kichenTimer } from "./sounds.js"
+
+const kichenTimer = new Audio('./assets/audio/kichen-timer.mp3')
 
 export function countdown() {
 

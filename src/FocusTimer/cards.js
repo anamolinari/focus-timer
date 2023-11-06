@@ -1,7 +1,7 @@
-const audioOne = new Audio('./assets/floresta.wav')
-const audioTwo = new Audio('./assets/chuva.wav')
-const audioThree = new Audio('./assets/cafeteria.wav')
-const audioFour = new Audio('./assets/lareira.wav')
+const audioOne = new Audio('./assets/audio/tree.wav')
+const audioTwo = new Audio('./assets/audio/rain.wav')
+const audioThree = new Audio('./assets/audio/shop.wav')
+const audioFour = new Audio('./assets/audio/bonfire.wav')
 
 const audioElements = [audioOne, audioTwo, audioThree, audioFour];
 

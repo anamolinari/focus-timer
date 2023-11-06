@@ -106,43 +106,43 @@ main {
 }
 
 .card-one {
-    background-image: url('./assets/arvore.svg');
+    background-image: url('./assets/image/tree.svg');
     background-position: center center;
 }
 
 .card-one:hover,
 .card-one:focus {
-    background-image: url('./assets/arvore-active.svg');
+    background-image: url('./assets/image/tree-active.svg');
 }
 
 .card-two {
-    background-image: url('./assets/chuva.svg');
+    background-image: url('./assets/image/rain.svg');
     background-position: center center;
 }
 
 .card-two:hover,
 .card-two:focus {
-    background-image: url('./assets/chuva-active.svg');
+    background-image: url('./assets/image/rain-active.svg');
 }
 
 .card-three {
-    background-image: url('./assets/cafeteria.svg');
+    background-image: url('./assets/image/shop.svg');
     background-position: center center;
 }
 
 .card-three:hover,
 .card-three:focus {
-    background-image: url('./assets/cafeteria-active.svg');
+    background-image: url('./assets/image/shop-active.svg');
 }
 
 .card-four {
-    background-image: url('./assets/fogueira.svg');
+    background-image: url('./assets/image/bonfire.svg');
     background-position: center center;
 }
 
 .card-four:hover,
 .card-four:focus {
-    background-image: url('./assets/fogueira-active.svg');
+    background-image: url('./assets/image/bonfire-active.svg');
 }
 
 /* controls */

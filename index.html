@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusTimer</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+    
+    <main>
+        <div class="app">
+
+            <section id="timer" class="flex">
+                <span id="minutes">00</span>
+                <span id="divider">:</span>
+                <span id="seconds">00</span>
+            </section>
+    
+            <section id="controls">
+    
+                <button data-action="toggleRunning" class="ph ph-play-circle btn-controls">
+                    <span class="sr-only">Iniciar contador</span>
+                </button>
+
+                <button data-action="toggleRunning" class="ph ph-pause-circle btn-controls">
+                    <span class="sr-only">Pausar contador</span>
+                </button>
+                
+                <button data-action="stop" class="ph ph-stop-circle btn-controls">
+                    <span class="sr-only">Parar contador</span>
+                </button>
+    
+                <button data-action="increaseTime" class="ph ph-plus-circle btn-controls">
+                    <span class="sr-only">Aumentar tempo</span>
+                </button>
+    
+                <button data-action="decreaseTime" class="ph ph-minus-circle btn-controls">
+                    <span class="sr-only">Diminuir tempo</span>
+                </button>
+    
+            </section>
+    
+            <section id="cards">
+                <button data-action="cardOne" class="card-button card-one"></button>
+                <button data-action="cardTwo" class="card-button card-two"></button>
+                <button data-action="cardThree" class="card-button card-three"></button>
+                <button data-action="cardFour" class="card-button card-four"></button>
+            </section>
+    
+        </div>
+    </main>
+    
+</body>
+</html>

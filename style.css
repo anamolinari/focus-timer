@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(40%, 1% + 2vh, 62.5%);
+
+    --bg-color: hsla(0, 0%, 100%, 1);
+    --text-color: hsla(240, 6%, 21%, 1);
+    --btn-color: rgb(98, 98, 98);
+    --cards-color: hsla(240, 9%, 89%, 1);
+    --primary-color: hsla(194, 97%, 31%, 1);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    display: grid;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    gap: 19.2rem;
+}
+  
+.app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-column-gap: 19rem;
+    align-items: center;
+}
+
+#timer {
+    align-self: flex-end;
+    justify-content: center;
+    grid-row: 1; 
+    grid-column: 1;
+
+    font-size: 13rem;
+    font-weight: bold;
+    color: var(--text-color); 
+    text-align: center;
+}
+
+#controls {
+    display: inline-flex;
+    align-self: flex-start;
+    justify-content: center;
+    grid-row: 2; 
+    grid-column: 1;
+    gap: 4rem; 
+    height: 5rem;
+}
+
+.btn-controls {
+    font-size: 6rem;
+    background-color: transparent;
+    border: 0;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearance: none;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    gap: 3rem;
+    text-align: center;
+    width: 40rem;
+    height: 45rem;
+}
+
+.card-button {
+    background-color: #E1E1E6;
+    border: none;
+    border-radius: 2.4rem;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.card-button:hover,
+.card-button:focus {
+    background-color: #02799D;
+}
+
+.card-one {
+    background-image: url('./assets/arvore.svg');
+    background-position: center center;
+}
+
+.card-one:hover,
+.card-one:focus {
+    background-image: url('./assets/arvore-active.svg');
+}
+
+.card-two {
+    background-image: url('./assets/chuva.svg');
+    background-position: center center;
+}
+
+.card-two:hover,
+.card-two:focus {
+    background-image: url('./assets/chuva-active.svg');
+}
+
+.card-three {
+    background-image: url('./assets/cafeteria.svg');
+    background-position: center center;
+}
+
+.card-three:hover,
+.card-three:focus {
+    background-image: url('./assets/cafeteria-active.svg');
+}
+
+.card-four {
+    background-image: url('./assets/fogueira.svg');
+    background-position: center center;
+}
+
+.card-four:hover,
+.card-four:focus {
+    background-image: url('./assets/fogueira-active.svg');
+}
+
+/* controls */
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle {
+    display: none;
+}
+
+.ph-play-circle:active,
+.ph-pause-circle:active,
+.ph-stop-circle:active,
+.ph-plus-circle:active,
+.ph-minus-circle:active {
+    color: var(--btn-color);
+}
